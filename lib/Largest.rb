@@ -1,5 +1,5 @@
 class Largest
   def self.find_largest(numbers)
-    nil
+    numbers.max
   end
 end
