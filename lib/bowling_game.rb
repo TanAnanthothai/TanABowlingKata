@@ -1,4 +1,4 @@
-class BowlingGame
+class Game
 
 	def initialize
 		@rolls = [] # initialize an array to hold the score

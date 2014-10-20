@@ -1,24 +1,24 @@
 require "spec_helper"
 require "bowling_game"   # name of the class we have just created
  
-describe 'Bowling Game Checking in case that the game is' do
+describe 'BowlingGameTest' do
 
 	before do 
 		puts "\nNew Bowling game is created"
-		@game = BowlingGame.new
+		@game = Game.new
 	end
 
 
 	it('all 0 games') do
 		puts "\nall 0 games"
-		game = BowlingGame.new
+		game = Game.new
 		20.times{game.roll 0}
 		expect(game.score).to eq 0 
 	end
 
 	it('all ones') do
 		puts "\nall ones games"
-		game = BowlingGame.new
+		game = Game.new
 		20.times{game.roll 1}
 		expect(game.score).to eq 20
 	end
