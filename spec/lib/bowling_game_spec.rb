@@ -17,7 +17,7 @@ describe 'Bowling Game Checking in case that the game is' do
 	end
 
 	it('all ones') do
-		puts "\nall ones games"fdsafdsaf ds
+		puts "\nall ones games"
 		game = BowlingGame.new
 		20.times{game.roll 1}
 		expect(game.score).to eq 20
