@@ -24,6 +24,7 @@ class Game
 			end
 			
 		end
+		puts result
 		result
 	end
 

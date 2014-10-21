@@ -52,4 +52,44 @@ describe 'BowlingGameTest' do
 		21.times{@game.roll 5}
 		expect(@game.score).to eq 150
 	end 
+
+	it ('example score, from excel file') do
+		#frame 1
+		@game.roll 10
+		#frame 2
+		@game.roll 8 
+		@game.roll 1 
+		#28. roll28
+		#frame 3
+		@game.roll 2
+		@game.roll 8
+		#frame 4
+		@game.roll 5 
+		@game.roll 4
+		#52, roll12
+		
+		#frame 5
+		@game.roll 10
+		
+		# #frame 6
+		 @game.roll 10
+		 #9.times{@game.roll 0}
+		#74 roll9
+		# #frame 7
+		  @game.roll 10
+		 
+		# # #frame 8
+		  @game.roll 5
+		 
+		  @game.roll 5
+		#137, 5rolls
+		# # #frame 9
+		  @game.roll 10
+		
+		# # #frame 10
+		 @game.roll 10		
+		2.times{@game.roll 0}
+		expect(@game.score).to eq 177
+
+	end
 end
